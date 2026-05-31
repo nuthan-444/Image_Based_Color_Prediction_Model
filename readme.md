@@ -22,7 +22,6 @@ Used as input features for model training
 https://www.kaggle.com/datasets/ayanzadeh93/color-classification
 
 
-📁 Folder Structure
 ColorPredictionProject/
 │
 ├── ColorClassification/        # Training dataset (color folders)
@@ -34,9 +33,10 @@ ColorPredictionProject/
 ├── For_Testing/                # Test images for prediction
 │   └── 85.jpg
 │
-├── model.ipynb                    # Model training and prediction code
+├── model.ipynb                 # Model training and prediction code
 ├── ColorClassifier.pkl         # Saved trained model
 └── README.md                   # Project documentation
+
 📈 Model Performance
 Algorithm: Random Forest Classifier
 Accuracy: 0.75 (75%)
