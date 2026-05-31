@@ -1,44 +1,51 @@
-🎨 Color Prediction Using Images
-📌 Description
+<h1>🎨 Color Prediction Using Images</h1>
 
+<h2>📌 Description</h2>
+<p>
 This project is a Machine Learning-based system that predicts the dominant color of an image using pixel-level features. The model is trained using a Random Forest classifier on labeled image data and is capable of classifying new unseen images into predefined color categories.
+</p>
 
-Model Accuracy: 0.75 (75%)
+<p><b>Model Accuracy:</b> 0.75 (75%)</p>
 
-🛠️ Tools and Technologies Used
-Python 🐍
-OpenCV (cv2)
-NumPy
-Scikit-learn
-📊 Dataset
+<h2>🛠️ Tools and Technologies Used</h2>
+<ul>
+    <li>Python</li>
+    <li>OpenCV (cv2)</li>
+    <li>NumPy</li>
+    <li>Scikit-learn</li>
+</ul>
 
-The dataset consists of images organized into folders based on their respective color labels. Each folder represents a specific color class such as red, blue, green, yellow, etc.
+<h2>📊 Dataset</h2>
+<p>
+Dataset contains images organized into color folders (red, blue, green, etc.).
+Images are resized to 64x64 and flattened into feature vectors.
+</p>
 
-Images are resized to 64x64 pixels
-Converted into numerical pixel arrays (flattened)
-Used as input features for model training
+<p>
+<b>Dataset Link:</b>
+<a href="https://www.kaggle.com/datasets/ayanzadeh93/color-classification">
+Kaggle Dataset
+</a>
+</p>
 
-📥 Dataset Source (Kaggle):
-https://www.kaggle.com/datasets/ayanzadeh93/color-classification
-
-
+<h2>📁 Folder Structure</h2>
+<pre>
 ColorPredictionProject/
-│
-├── ColorClassification/        # Training dataset (color folders)
+├── ColorClassification/
 │   ├── Red/
 │   ├── Blue/
-│   ├── Green/
 │   └── ...
-│
-├── For_Testing/                # Test images for prediction
+├── For_Testing/
 │   └── 85.jpg
-│
-├── model.ipynb                 # Model training and prediction code
-├── ColorClassifier.pkl         # Saved trained model
-└── README.md                   # Project documentation
+├── model.ipynb
+├── ColorClassifier.pkl
+└── README.md
+</pre>
 
-📈 Model Performance
-Algorithm: Random Forest Classifier
-Accuracy: 0.75 (75%)
-Train-Test Split: 80-20
-Features: Flattened image pixels (64 × 64 × 3 = 12288)
+<h2>📈 Model Performance</h2>
+<ul>
+    <li>Algorithm: Random Forest</li>
+    <li>Accuracy: 0.75</li>
+    <li>Train-Test Split: 80-20</li>
+    <li>Features: 64x64x3 flattened pixels</li>
+</ul>
